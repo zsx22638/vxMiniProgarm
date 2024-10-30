@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#FF5D44",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "商品花慧",
+    "backgroundTextStyle": "light",
+  "usingComponents": {
+    "custom-swiper":"/pages/index/custom-swiper/custom-swiper"
+  }
+}

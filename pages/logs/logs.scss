@@ -1,0 +1,17 @@
+view {
+  margin: 10rpx;
+  border: 1px black solid;
+  box-sizing: border-box;
+}
+
+.wx-for {
+  height: 350rpx;
+
+  &:nth-child(odd) {
+    background-color: lightblue; // 第一个子元素的样式
+  }
+
+  &:nth-child(even) {
+    background-color: lightcoral; // 最后一个子元素的样式
+  }
+}

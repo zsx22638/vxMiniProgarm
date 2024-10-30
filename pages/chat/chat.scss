@@ -1,0 +1,17 @@
+.scroll-y {
+  background-color: pink;
+  margin: 20rpx;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 700rpx;
+  view {
+    flex: 0 0 600rpx;  // 使用此设置来定义宽度
+    &:nth-child(odd) {
+      background-color: lightgreen;
+    }
+    &:nth-child(even) {
+      background-color: lightcoral;
+    }
+  }
+}

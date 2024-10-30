@@ -1,0 +1,19 @@
+/* pages/home/home.wxss */
+.list {
+  display: flex;
+  justify-content: space-around;
+  .list-item{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: orange;
+  }
+}
+
+
+.content {
+  width: 100wh;
+  height: 100vh;
+  background-color: pink;
+}

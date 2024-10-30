@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="login-form">
+    <input
+      placeholder="请输入用户名"
+      bindinput="handleInput"
+      data-field="username"
+      class="input-field"
+    />
+    <input
+      placeholder="请输入密码"
+      password="true"
+      bindinput="handleInput"
+      data-field="password"
+      class="input-field"
+      type="safe-password"
+    />
+    <button bindtap="handleLogin" class="login-button">登录</button>
+    <button bind:tap="goTo">跳转到非taBbar页面</button>
+    <button bindtap="goToTaBbar" plain="true" type="primary">跳到taBbar页面</button>
+  </view>
+</view>

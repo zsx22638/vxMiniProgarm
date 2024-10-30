@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<card></card>
+<custom-swiper></custom-swiper>
+<view class="page">
+  <!-- 轮播图 -->
+  <view>
+    <swiper autoplay="true" class="swiperImg" circular indicator-dots indicator-color="green">
+      <swiper-item>
+        <image src="/static/images/1.png" mode="scaleToFill" show-menu-by-longpress="true" />
+      </swiper-item>
+      <swiper-item>
+        <image src="/static/images/banner1.jpg" mode="scaleToFill" show-menu-by-longpress="true" />
+      </swiper-item>
+
+      <swiper-item>
+        <image src="/static/images/banner1.jpg" mode="scaleToFill" show-menu-by-longpress="true" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 公司信息 -->
+  <view class="info">
+    <text> <text class="iconfont icon-zsxtruck"></text> 同城配送</text>
+    <text> <text class="iconfont icon-zsxjiangpai"></text> 行业龙头</text>
+    <text> <text class="iconfont icon-zsxshizhong"></text> 半小时送达</text>
+    <text> <text class="iconfont icon-zsxxianhua-"></text> 100%好评</text>
+  </view>
+
+  <!-- 商品导航区 -->
+  <view class="good-nav">
+    <view>
+      <image src="/static/images/鲜花.png"></image>
+      <text>玫瑰鲜花</text>
+    </view>
+    <view>
+      <image src="/static/images/铃铛.png"></image>
+      <text>通知公告</text>
+    </view>
+    <view>
+      <image src="/static/images/四叶草.png"></image>
+      <text>分类中心</text>
+    </view>
+    <view>
+      <image src="/static/images/礼物.png"></image>
+      <text>礼物定制</text>
+    </view>
+    <view>
+      <image src="/static/images/蛋糕.png"></image>
+      <text>蛋糕预定</text>
+    </view>
+  </view>
+
+  <!-- 热销商品页面 -->
+  <scroll-view  enable-flex scroll-x="true" class="scroll-contain">
+    <view class="scroll-x">
+      <view>
+      <image src="/static/goods-hot/1.jpg" mode=""/>
+      <text>鲜花玫瑰</text>
+      <text>99</text>
+      </view>
+      <view>
+      <image src="/static/goods-hot/2.jpg" mode=""/>
+      <text>鲜花玫瑰</text>
+      <text>99</text>
+      </view>
+      <view>
+      <image src="/static/goods-hot/3.jpg" mode=""/>
+      <text>鲜花玫瑰</text>
+      <text>99</text>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- text标签 -->
+  <!-- <text user-select="true">测试文字</text>
+  <view>菜单</view> -->
+<view class="path">
+  <button bindtap="goTo" data-url="/pages/chat/chat" type="primary">chat页面</button>
+  <button bindtap="goTo" data-url="/pages/home/home" type="warn">home页面</button>
+  <button bindtap="goTo" data-url="/pages/login/login" type="primary">login页面</button>
+  <button bindtap="goTo" data-url="/pages/logs/logs" type="default">logs页面</button>
+</view>
+
+  
+</view>

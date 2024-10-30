@@ -1,0 +1,36 @@
+<view bind:tap="parent" data-id="1" style="background-color: antiquewhite;">
+  <button catch:tap="child" data-id="2">不冒泡</button>
+</view>
+
+<view bind:tap="parent" data-id="1" style="background-color: coral;">
+  <button bind:tap="child" data-id="2">事件冒泡</button>
+</view>
+
+<!-- mark传递参数 -->
+<view mark:id="9" mark:name="父" bind:tap="handpar">
+  <button type="primary" mark:id="10" mark:name="tom" bind:tap="handle">mark测试</button>
+</view>
+
+
+<view mark:id="9" mark:name="父" bind:tap="handpar">
+  <button type="primary" mark:id="10" mark:name="tom" catch:tap="handle">mark测试</button>
+</view>
+
+<!-- 修改对象类型数据 -->
+<view>{{ userinfo.name }}</view>
+<button bind:tap="change">修改数据</button>
+
+
+<!-- 简易版本的数据双向绑定- -->
+<view>
+  <input model:value="{{ inputValue }}" type="text" placeholder="请输入" />
+  <checkbox model:checked="{{ isChecked }}" />是否同意该协议
+</view>
+
+
+<button bind:tap="refresh">刷新</button>
+<button bind:tap="stopRefresh">停止刷新</button>
+
+<view wx:for="{{list}}" wx:key="*this" wx:for-index="idx" wx:for-item="itemName" class="wx-for">
+  {{idx}}-{{itemName}}
+</view>

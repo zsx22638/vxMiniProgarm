@@ -1,0 +1,16 @@
+<scroll-view 
+enable-flex 
+scroll-y="true" 
+class="scroll-y"
+refresher-enabled
+refresher-thres hold="1000"
+enable-back-to-top = "true"
+bindscrolltolower="change"
+lower-threshold="100"
+refresher-background="lightblue"
+
+>
+  <view wx:for="{{list}}" wx:key="*this" wx:for-index="idx" wx:for-item="itemName" class="wx-for">
+  {{idx}}-{{itemName}}
+</view>
+</scroll-view>

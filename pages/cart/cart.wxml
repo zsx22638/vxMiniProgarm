@@ -1,0 +1,4 @@
+<text>{{ name }}</text>
+<navigator url="/pages/pageTest1/pageTest1?name=zsx&id=8">
+去pages/pageTest1/pageTest1
+</navigator>

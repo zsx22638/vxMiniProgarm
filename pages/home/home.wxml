@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<view class="list">
+  <view data-id="1" class="list-item" bind:tap="change">项目 1</view>
+  <view data-id="2" class="list-item" bind:tap="change">项目 2</view>
+  <view data-id="3" class="list-item" bind:tap="change">项目 3</view>
+</view>
+<view class="content">
+  <!-- <view wx:if="{{count == 1}}"> 1 </view>
+  <view wx:elif="{{count == 2}}"> 2 </view>
+  <view wx:else> 3 </view> -->
+  <view hidden="{{count == 1}}"> 1 </view>
+  <view hidden="{{count == 2}}"> 2 </view>
+  <view hidden="{{ count == 3 }}"> 3 </view>
+  <block wx:for="{{[1, 2, 3]}}" wx:key="index">
+  <view> {{index}}:索引 </view>
+  <view> {{item}} </view>
+</block>
+
+
+
+</view>
